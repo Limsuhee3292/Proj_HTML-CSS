@@ -8,20 +8,35 @@
 
     <!--form 태그-->
     <h2>네이버에서 "멕시코" 검색 요청하기</h2>
-    <form>
-    </form>
+    <form action="https://search.naver.com/search.naver" method="GET">
+    <input type="text" name="query" value="멕시코">
+    <input type="text" name="ie" value="UTF-8">
+    <input type="submit" value="검색">
+    <!-- 실제 작동시키는 역할은 submit -->
+    </form> 
     <hr />
 
     <h2>다음에서 "멕시코" 검색 요청하기</h2>
-    <form>
+    <form action="https://search.daum.net/search" method="GET" target="_blank">
+    <input type="text" name="q" value="멕시코">
+    <input type="submit" value="검색">
     </form>
+    
+    <!-- 검색 결과 페이지가 새탭으로 나오게 하려면 어떻게 해야할까?-->
+    <!-- input 태그에 target을 넣는게 아니라, form 태그에 target을 넣어야 새창으로 뜬다!-->>
     <hr />
 
 
     <h2>네이버 post 요청</h2>
-    <form>
-    </form>
+    <form action="https://search.naver.com/search.naver" method="POST">
+        <input type="text" name="query" value="멕시코">
+    <input type="submit" value="검색"></form>
     <hr />
+
+    <h2>구글에서 멕시코 검색</h2>
+    <form action="https://www.google.co.kr/search" method="GET">
+    <input type="text" name="q" value="멕시코">
+    <input type="submit" value="검색"></form>
 
 </body>
 </html>

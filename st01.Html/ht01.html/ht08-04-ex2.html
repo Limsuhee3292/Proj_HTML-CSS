@@ -4,18 +4,63 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+         label { width: 100px; display: inline-block; }
+         label2 { width: 200px; display: inline-block;}
+         #memo {vertical-align:top}
+         #p1 {width: 50px;}
+         #p2 {width: 50px;}
+         #p3 {width: 50px;}
+
     </style>
 </head>
+
 <body>
-    <h1>��ǰ �ֹ���</h1>
+         <!-- #memo는 메모가 있는 곳의 태그를 찾아 vertical-align.. 스타일을 준다는 뜻 -->
 
-        <!-- ���� ���� -->
+    <h1>상품주문서</h1>
+        <form action="">
+        <fieldset>
+            <legend>개인정보</legend>
+            <label for="">이름</label>
+                <input type="text" placeholder="이름을 입력하시오"><br>
+            <label for="">연락처</label>
+                <input type="text" name="" id="" placeholder="연락처를 입력하시오">
+        </fieldset>
 
-        <!-- ����� ���� -->
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <label for="">주소</label>
+                <input type="text" name="" id="" required> <br>
+            <label for="">전화번호</label>
+                <input type="text" name="" id="" required> <br>
+            <label for="" id="memo">메모</label>
+                <textarea cols="" rows=""> 
+                </textarea>
+                <!--textarea 자체가 태그! input이 따로 필요하지 않다!-->
+                <!--textarea 이거 쫌 이상한데????;; input:textarea 와 textarea 태그 자체의 차이점은 무엇일까?-->
+        </fieldset>
 
-        <!-- �ֹ� ���� -->
+        <fieldset>
+            <legend>주문 정보</legend>
+            
+            <input type="checkbox" name="1" id="" checked> <label2 for="">과테말라 안티구아(100g)</label2> 
+            <input type="number" name="" id="p1"> 개 <br>
 
-        <!-- �ֹ��ϱ� -->
-        <!-- �ٽ��ۼ� : form �Է� �� �ʱ�ȭ  -->
+            <input type="checkbox" name="1" id=""> <label2 for="">인도네시아 만델링(100g)</label2>
+            <input type="number" name="" id="p2"> 개 <br>
+
+            <input type="checkbox" name="1" id=""> <label2 for="">탐라는도다(블렌딩)(100G)</label2>
+            <input type="number" name="" id="p3"> 개
+
+        </fieldset>
+        <br>
+
+        <div align="center">
+        <!-- div align 말고 다른 중앙정렬하는 것은 무엇?-->
+        <input type="submit" value="주문하기">
+        <input type="reset" value="다시작성">
+        </div>
+
+        </form>
 </body>
 </html>

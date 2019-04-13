@@ -12,8 +12,18 @@
 <body>
     <!-- fieldset & legend -->
     <!-- form 태그 필요 속성 3가지 추가. -->
-    <form action="" method="">
+    <fieldset>
+        <legend>입력양식</legend>
+    <form action="" method="get">
+        <label for="aaa"> 이름:</label> <input type="text" name="" id="aaa"> 
+        <br>
+        <label for="bbb"> 이메일:</label> <input type="text" name="" id="bbb">
+        <input type="submit" value="쿼리전송">
     </form>
+    </fieldset>
+
+    <!-- fielset은 form태그 밖이나 안이나 동일하게 사용 가능?-->
+    <!-- 'form 태그 하나면 전송 하나'의 방식으로 사용하는것이 더 좋음!-->>
 
 </body>
 

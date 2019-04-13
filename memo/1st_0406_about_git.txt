@@ -1,0 +1,57 @@
+
+0. 깃허브 로그인
+
+1.-1) 저장소 만들기 (깃허브에서)
+
+ - 이니셜라이즈를 체크하면 보기가 편하다!
+
+2. 주소카피 (상단 URL과 동일)
+
+3. 저장 공간에서 우클릭 '깃클론' (! 이작업은 처음 한번만 하는것!)
+
+
+
+
+commit은 로컬에 저장 push는 서버에 저장
+
+
+
+
+[파일올리기]
+
+폴더를 넣어놓고 우클릭!
+
+- 메세지 입력
+
+- 파일 선택 (ALL)
+
+- commit후에 push (아이디&비번 입력)
+
+
+[삭제하기]
+
+설정(setting에 들어가서)
+
+저장소 이름 카피
+
+danger zone에서 delete this reposiotry 클릭
+
+저장소 이름 입력 및 삭제 
+(로컬까지 삭제되지는 않는다! 그래서 v표시가 있는것임)
+
+
+
+[플러그인 사용]
+
+ - Korean Language Pack for Visual Studio Code
+
+ - open in browser
+
+ - VS Color Picker
+
+
+
+
+
+
+
