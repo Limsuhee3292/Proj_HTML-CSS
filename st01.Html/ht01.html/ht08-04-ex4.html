@@ -14,6 +14,7 @@
         legend { font-weight:bold; }
         ul {list-style-type: none;}
         li { line-height:30px;}
+        label2 { width: 50px; display: inline-block; }
     </style>
   </head>
   <body>
@@ -21,6 +22,27 @@
             <h1>프런트엔드 개발자 지원서 </h1>
             <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
             <hr>
+
+            <fieldset>
+              <legend>회원가입</legend>
+              <label2 for="">이름</label2> <input type="text" name="" id="" placeholder="공백없이 입력하세요"><br>
+              <label2 for="">연락처</label2> <input type="tel" name="" id="">
+            </fieldset>
+
+            <fieldset>
+              <legend>지원분야</legend>
+            <input type="radio" name="1" id=""> <label for="">웹퍼블리싱</label> <br>
+            <input type="radio" name="1" id=""> <label for="">웹어플리케이션 개발</label> <br>
+            <input type="radio" name="1" id=""> <label for="">개발환경 개선</label> <br>
+            <!--라디오 버튼에서 id값을 맞춰주는 것이 아니라 name을 맞춰줘야함-->
+          </fieldset>
+
+            <fieldset>
+              <legend>지원동기</legend> 
+            <textarea name="" id="" cols="65" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+            </fieldset>
+
+            <input type="submit" value="접수하기"><input type="reset" value="다시쓰기">
         </div>
   </body>
 </html>

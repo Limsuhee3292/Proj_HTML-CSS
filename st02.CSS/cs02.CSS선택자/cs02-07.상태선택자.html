@@ -8,7 +8,25 @@
            1. display 를 이용하는 방법
            2. float를 이용하는 방법
         */
+        li {
+        list-style-type: none; 
+        /*display: inline-block;
+        marginleft -6px; */
+        float: left; /*float를 쓰면 떨어지는 현상은 없어짐*/
+        background-color: palevioletred; 
+        width:50px; height: 50px; 
+        }
+
+        /*홀수와 짝수를 찾아서 배경색지정*/
+        li:nth-child(odd) {background-color: peachpuff;}
+        li:nth-child(even) {background-color: pink;}
+
+        /*첫번째 태그와 마지막 태그를 찾아서*/
+        li:first-child {border-top-left-radius: 10px; border-bottom-left-radius: 10px;}
+        li:last-child {border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
+
         
+
         /* 브라우저 스타일 초기화 */
     </style>
 </head>
@@ -32,4 +50,4 @@
         <li>8번째</li>
     </ul>
 </body>
-</html>
+</html>

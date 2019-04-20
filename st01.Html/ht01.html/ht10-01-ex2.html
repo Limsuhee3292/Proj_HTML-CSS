@@ -11,17 +11,20 @@
 
         header {
             border: 1px dotted orange;
+            height: 150px;
         }
 
         nav {
             border: 1px dotted gray;
             margin: 30px;
+            height: 70px;
         }
 
         article {
             border: 1px dotted lightblue;
             display: inline-block;
             width: 75%;
+            height: 300px;
         }
 
         aside {
@@ -29,14 +32,28 @@
             display: inline-block;
             width: 22%;
             float: right;
+            height: 300px;
         }
 
         footer {
             border: 1px dotted pink;
+            height: 100px;
         }
+        #bodyleft { width:50%; float:left;}
     </style>
 </head>
 
 <body>
+    <header>
+        <nav>&nbsp;</nav>
+    </header>
+
+    <div id="bodleft">
+        <article ></article>
+        <aside></aside>
+    </div>
+
+    <footer></footer>
+
 </body>
 </html>
