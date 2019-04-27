@@ -3,6 +3,40 @@
 <head>
     <meta charset="utf-8">
     <title>폰트 CSS 속성</title>
+    <style>
+        #font1 { font-family:"serif";}
+        #font2 { font-family: "나눔고딕";}
+        
+        /*외부 폰트를 사용하는 방법*/
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        #font3 {font-family:"Nanum Brush Script"}
+
+
+        /* @font-face를 사용한 외부 폰트 사용. 나눔 바른 고딕 폰트 사용 */
+        @font-face {
+            src:url(http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff); format('woff');
+            font-family:"NanumBarunGothicWebBold";
+            /*font-size: 20px;
+            font-weight: bold;
+            font-style: italic;*/
+        }
+
+        #font5 {font-family: "NanumBarunGothicWebBold";}
+
+        /*font-size 설정 : 단위: px, %(부모 태그를 기준으로), em */
+        
+        /* .size1,.size2,.size3 {font-family:"NanumBarunGothicWebBold";} 중복되는 부분 삭제 */
+
+        .size1 {font-family:"NanumBarunGothicWebBold"; font-size: 40px; }
+        .size2 {font-family: "NanumBarunGothicWebBold"; font-size:50%;}
+        .size3 {font-family: "NanumBarunGothicWebBold"; font: size 2em;}
+
+        /*font-style 설정*/
+        .no1 {font-style: normal;}
+        .no2 {font-style:italic;}
+        .no3 {font-style:oblique;}
+
+    </style>
 </head>
 <body>
     <pre>
@@ -24,9 +58,6 @@
     <p> 변경전: @import를 사용한 텍스트 !!! </p>
     <p id="font3"> 변경후: @import를 사용한 텍스트 !!! </p>
 
-    <h2>@font-face를 사용한 내부 폰트 사용. 나눔 바른 고딕 폰트 사용</h2>
-    <p> 변경전: @font-face를 사용한 텍스트 !!! </p>
-    <p id="font4"> 변경후: @font-face를 사용한 텍스트 !!! </p>
 
     <h2>@font-face를 사용한 외부 폰트 사용. 나눔 바른 고딕 폰트 사용</h2>
     <div>나눔 바른 고딕 폰트 : http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff</div>

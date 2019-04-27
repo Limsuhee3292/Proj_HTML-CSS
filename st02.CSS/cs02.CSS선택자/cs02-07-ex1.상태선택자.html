@@ -3,18 +3,34 @@
 <head>
     <title>상태선택자</title>
     <style>
+    /*ID를 사용 : 중복되는 경우에는 사용 X */
+    #third01 {background-color: darkcyan;}
+    #third02 {background-color:darksalmon;}
+    #third03 {background-color: gold;}
+
+    /* 중복되는 경우에는 class를 사용 */
+
+    .third01 {background-color: darkcyan;}
+    .third02 {background-color:darksalmon;}
+    .third03 {background-color: gold;}
+
+    /* 상태선택자를 사용하는경우 (공식이용) */
+    tr:nth-child(3n+0) {background-color: darkcyan;}
+    tr:nth-child(3n+1) {background-color:darksalmon;}
+    tr:nth-child(3n+2) {background-color: gold;}
+
 
     </style>
 </head>
 <body>
     <table>
-        <tr><td>첫 번째  </td></tr>
-        <tr><td>두 번째  </td></tr>
-        <tr><td>세 번째  </td></tr>
-        <tr><td>네 번째  </td></tr>
-        <tr><td>다섯 번째</td></tr>
-        <tr><td>여섯 번째</td></tr>
-        <tr><td>일곱 번째</td></tr>
+        <tr class="third02"><td>첫 번째  </td></tr>
+        <tr class="third03"><td>두 번째  </td></tr>
+        <tr class="third01"><td>세 번째  </td></tr>
+        <tr class="third02"><td>네 번째  </td></tr>
+        <tr class="third03"><td>다섯 번째</td></tr>
+        <tr class="third01"><td>여섯 번째</td></tr>
+        <tr class="third02"><td>일곱 번째</td></tr>
     </table>
 </body>
 </html>
