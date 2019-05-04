@@ -1,0 +1,46 @@
+
+ 2019.05.03(토) 5th 수업
+
+ (지난시간 Review) 
+
+#. css의 목적: 페이지를 꾸미는것.
+
+ - 찾고, 설정(블락태그↔ 인라인태그)하는것
+                 1) float - clear
+                 2) display-inline block flex
+                 3) 포지셔닝
+
+ - 페이지 레이아웃(HTML&CSS)
+
+#. box shadow
+
+ (cs04-15 예제중)
+ - 텍스트의 수직은 line height 밖에 었뜸
+ - 모니터에서는 아래쪽으로가 Y축 플러스 방향임!
+ - boxshadow: x축 y축 흐림정도 (번짐정도) 색상
+
+(cs04-15예제)
+ - ':hover' 마우스가 오버되었을때 나타나는 것들
+
+a태그 목적
+ - 페이지간 이동: 링크
+ - 페이지 내 이동: 앵커
+ - 4가지 상태(선택자): link, visited, active, hover?! 
+ - active는 마우스를 누르로 뗄때까지 적용이 되는 것!
+
+ >>예제Cs04-16 float를 사용하고 clear both를 선언해주는 위치!
+  - ::after과 ::before의 의미: container 태그의 바로 마지막 닫는 div태그 바로 이전태그
+  - (?) float 말고 다른 방법은 뭐가 있찌?
+
+>> div 는 기본적으로 블럭태그 (cs04-17: 수진주임님한테 물어보기!)
+
+>> span은 인라인태그 (cs04-19예제)
+
+
+(점심시간)
+
+>> blog.html예제
+
+ - 하단의 float:right / float:left 는 width값을 주어야함!
+
+

@@ -3,6 +3,44 @@
 <head>
     <meta charset="utf-8">
     <title>텍스트 스타일</title>
+    <style>
+        .container{
+            font-family: "맑은고딕","Dotum";
+        }
+        
+        h1 {
+            font-size: 17px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        span.accent {
+            font-weight: bold;
+            color: red;
+        }
+        div.book-img{
+            float:left;
+        }
+        div.container::after{
+            clear: both;
+            display:block;
+            content:'';
+        }
+    /*
+        .book-img{
+            float: left;
+        }
+
+
+        .book-dese{
+            float: right;
+        }
+        */
+
+    </style>    
 </head>
 <body>
     <div class="container">
@@ -23,4 +61,4 @@
         </div>
     </div>
 </body>
-</html>
+</html>
