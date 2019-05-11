@@ -5,20 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>동영상 배경</title>
 </head>
+
+<style>
+
+    * {margin: 0; padding: 0;}
+
+    #bg {
+        background-image: url(./images/flame.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+        min-width: 100%;
+        min-height: 100%;
+
+        z-index: -1;
+        
+        position:fixed;
+        left: 0;
+        top: 0;
+    }
+
+     /*container 위치 이동 */
+    #container{
+        position: relative;
+        margin-left: 50%;
+        margin-top: 30%;
+    }
+
+
+</style>
 <body>
-    <pre>
-    1. 브라우저 디폴트 CSS 초기화
-    2. 동영상을 재생할 수 없을 때 표시할 배경 이미지 추가하기.
-    3. 동영상을 화면에 꽉 차게 채우기
-       동영상 너비와 높이를 화면에 꽉 차게 채우기.
-       (min-width , width , max-width)
-       (min-height, height, max-height)
-    4. 동영상 위치 고정하기(position 속성 사용 )
-    5. 동영상 겹치는 순서 설정 
-       z-index 값을 사용하여 다른 엘리먼트 아래에 놓이게 배치하시오.
-       z-index 는 엘리먼트가 겹치는 경우에 사용되는 속성. 기본값은 0 
-    6. 텍스트 위치 지정하기.
-    </pre>
+
     <video id="bg" src="images/flame.mp4" autoplay loop muted poster="images/flame.jpg" ></video>
     <div id="container">
           <h2>사람을 도와주는</h2>

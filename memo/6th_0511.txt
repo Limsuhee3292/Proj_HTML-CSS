@@ -1,0 +1,73 @@
+
+ 2019.05.11(토) 6th 수업
+
+
+#. html에서 경로 설정: SRC 속성사용
+#. CSS 에서 경로 설정: URL 이라는 함수 사용 
+
+(예제 05-1)
+ - 현재폴더: ./
+ - border를 설정할 때
+ - float를 사용했다면 
+     #content::after{
+        clear: both;
+        display: block;
+        content:''
+    }
+ - calc: 가변적인 너비값에 맞추어서 지정할 수 있는 것!
+ - 마진은 태그의 높이에 들어가지 않는다!
+ ★background-size: contain & cover (중요!)
+ - contain: 해당되는 태그에 무조건 맞춰라 (짧은 쪽을 기준으로 맞춰짐)
+ - cover: 배경 이미지로 태그를 모두 덮도록 이미지를 확대, 축소하는것
+
+
+(예제 05-2)
+- 태그의 수평 가운데 정렬 margin: 0 auto;
+- 텍스트의 수직정렬 line-height: 3;
+
+
+<점심시간>
+
+(수업중딴짓)
+보나콤 강동진 목사님의 말씀(파주 주사랑교회 부흥회)
+ 1강: 세상을 새롭게 하시는 하나님 https://youtu.be/OpUaF_iRG3k
+ 2강: 길갈의 은혜 https://youtu.be/ZQ4ZBtMWr5w
+ 3강: 농업공동체를 통한 선교 https://youtu.be/wnjPBFckthA
+ 4강: 날아가는 두루마리 https://youtu.be/Ysp7jAG5cKY
+ 5강: 품으시는 하나님 https://youtu.be/i8dts4MTrDU
+
+
+(예제 05-04)
+ - 배경이미지 고정: background-attachment: fixed;
+
+(예제 05-05)
+ - background-attachment: scroll 과 fixed 의 차이점
+
+(예제 05-06) :: 뭐하는 예제인거지..
+ - position에 대한 내용!
+
+>> 태그의 수직 위치 설정 방법 
+ 1. padding ㅇ르 사용하여 위쪽에 안쪽 여백 주기 calc()
+ 2. margin을 사용하여 위쪽에 바깥여백 주기 calc()
+ 3. position을 사용하여 위치 정하기 
+
+    #container {
+        position: relative;
+        left:500px; /*x축*/
+        top: 300px; /*y축*/
+    }
+
+ → 항상 3개가 같이 쓰여야 함!
+
+ #. z-index: -1; (겹치는 순서를 강제로 조정하는 것!)
+  - 마이너스는 뒤로 가라는 의미
+  - 플러스는 앞으로 가라는 의미
+
+(예제05-09) 2번 내용실습
+
+
+(5시부터 수업시간 내용 X)
+
+
+
+

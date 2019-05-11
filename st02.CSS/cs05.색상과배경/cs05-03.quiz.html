@@ -4,6 +4,43 @@
     <meta charset="utf-8">
 	<title>배경 스타일</title>
 </head>
+<style>
+	.container{
+		background-image: url(..//images/apple-bg.jpg);
+		background-repeat: no-repeat;
+		width: 640px;
+		height: 425px;
+		border: 1px solid black;
+
+		/*1. padding을 사용하여 위쪽에 안쪽 여백 추가
+		padding: 300px 0 0 0;*/
+	}
+
+
+	div.content {
+		width: 80%;
+		height: 60px;
+
+		background-color: rgba(255, 255, 255, 0.5);
+
+		/*태그의 수평 가운데 정렬*/
+		margin: 0 auto;
+
+		/*텍스트의 수직정렬*/
+		line-height: 3;
+
+		margin-top: 350px;
+
+		
+	}
+
+	.content > h1 {
+		font-size: 25px;
+		text-align:center;
+	}
+
+
+</style>
 <body>
 	<!-- background-image를 이용하여 배경 이미지 추가 -->
 	<div class="container">
@@ -12,4 +49,4 @@
 	    </div>
 	</div>
 </body>
-</html>
+</html>

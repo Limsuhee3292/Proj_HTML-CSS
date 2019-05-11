@@ -4,6 +4,152 @@
     <meta charset="utf-8">
     <title>배경 이미지</title>
 </head>
+<style>
+    /*css 초기화*/
+    * { margin: 0; padding: 0;}
+
+    /*페이지의 배경이미지 설정 */
+    body {
+        background-image:url(./images/bg1.png);
+        background-repeat: repeat;
+    }
+
+    /*clip 배경이미지 설정*/
+    #clip > div {
+        /*width 설정 - border 설정 - 수직을 수평으로 설정*/
+        width: calc(100%/3 - 2*40px - 2*6px);
+        border: 10px dotted #000000;
+        padding: 20px;
+        margin: 10px;
+        float:left;
+        background-color: antiquewhite;
+    }
+
+    #clip > div.bg1 {
+        background-clip: border-box;
+    }
+
+    #clip > div.bg2 {
+        background-clip: padding-box;
+    }
+
+    #clip > div.bg3 {
+        background-clip: content-box;
+    }
+
+    #clip::after{
+        clear:both;
+        display: block;
+        content:''
+    }
+
+    #color {
+        background-color: cadetblue;
+    }
+
+    #color > div {
+        border: 1px solid #000000;
+        background-color: white;
+        margin-right: 50px;
+    }
+
+    #origin > div{
+        width: calc(100%/3 - 2*80px);
+        border: 15px dotted rgba(100, 100, 100, 0.2);
+        padding: 35px;
+        margin: 30px;
+        float:left;
+        background-color: rgb(188, 203, 219);
+
+        background-image: url(images/bg5.png);
+        background-repeat: no-repeat;
+    }
+
+    #origin::after{
+        clear:both;
+        display: block;
+        content:'';
+    }
+
+    #orgin > div.bg1{
+        background-origin: border-box;
+    }
+
+    #orgin > div.bg2{
+        background-origin: padding-box;
+    }
+
+    #origin > div.bg3{
+        background-origin: content-box;
+    }
+
+    #position > div {
+        background-image: url(../images/bg2.jpg);
+        background-repeat: no-repeat;
+        width: 700px;
+        height: 150px;
+        padding: 150px 0 10px 0;
+        margin: 10px 0 0 0;
+    }
+
+    #position > div.bg1{
+        background-position: left top;
+    }
+
+    #position > div.bg2{
+        background-position: center;
+    }
+
+    #position > div.bg3{
+        background-position: bottom;
+    }
+
+    #position > div.bg4{
+        background-position: bottom right;
+    }
+
+    #size > div{
+        background-image: url(../images/bg4.jpg);
+        background-repeat: no-repeat;
+        background-position: left top;
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        float: left;
+        margin: 0 20px 20px 0;
+    }
+
+    #size::after{
+        clear: both;
+        display: block;
+        content:'';
+    }
+
+    #size > div.bg1{
+        background-size: auto;
+    }
+
+    #size > div.bg2{
+        background-size: 200px 150px;
+    }
+
+    #size > div.bg3{
+        background-size: 60% 40%;
+    }
+
+    #size > div.bg4{
+        background-size: contain;
+    }
+
+    #size > div.bg5{
+        background-size: cover;
+    }
+
+    #size > div.bg6{
+        background-size: 100% 100%;
+    }
+
+</style>
 <body>
     <div id="clip">
         <h2>background-clip</h2>
@@ -128,4 +274,4 @@
         <div class="bg6">배경 이미지 사이즈 : 100% 100%</div>
     </div>
 </body>
-</html>
+</html>
