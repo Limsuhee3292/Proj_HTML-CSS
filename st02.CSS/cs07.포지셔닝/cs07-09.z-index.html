@@ -4,6 +4,37 @@
     <meta charset="utf-8">
     <title>z-index 속성</title>
 </head>
+<style>
+    div {
+        border: 1px solid black;
+        width: 150px;
+        height: 150px;
+        
+    }
+    
+    div.b1{
+        background-color: lightcoral;
+        position: absolute;
+        z-index: 0;
+        }
+
+    div.b2{
+        background-color: lightskyblue;
+        position: absolute;
+        left: +30px;
+        top: 80px;
+        z-index: 1; /*2번 박스가 앞으로 튀어나오는 효과*/
+        }
+
+    div.b3{
+        background-color: lightgreen;
+        position: absolute;
+        top: +20px;
+        left: 60px;
+        z-index: -1;
+        }
+
+</style>
 <body>
     <div id="wrapper">
         <div class="b1">1</div>
@@ -11,4 +42,4 @@
         <div class="b3">3</div>
     </div>
 </body>
-</html>
+</html>

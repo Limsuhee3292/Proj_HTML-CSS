@@ -4,6 +4,29 @@
     <meta charset="UTF-8">
     <title>자식>자식>자식></title>
     <style>
+        * {margin: 0; padding: 0;}
+
+        #menu2 li { 
+            list-style: none; 
+
+        }
+        #menu2 a {text-decoration: none;}
+
+        body > div {float:left;margin-right: 100px;}
+
+        #menu2 {
+            float: left;
+            border: 1px black solid;
+            width: 100px;
+        }
+        #menu2 > li:hover {background-color: black;}
+        #menu2 > li:hover > a {color: white;}
+        
+        #menu2 > li > ul {display: none;}
+        #menu2 > li:hover > ul {display: block;}
+
+
+
     </style>
 </head>
 <body>

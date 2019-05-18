@@ -1,0 +1,133 @@
+
+ 2019.05.18(토) 7th 수업
+
+
+ >>예제Cs06-16 
+ - inline block 과 inline 의 차이점이 무엇이지? (상단 여백이 먹지 않았었음)
+
+
+ >>예제 CS06-06 cs06-06.display_flex
+ - display:flex;
+ - flex-direction: column;
+    → 이게 뭐지? 저번시간 오후 5시 이후에 한건가?
+ - flex-grow (자동으로 채워라 - 높이가 변하더라도 꽉 찬화면)
+
+
+ >> 예제 cs06-05.display_table
+ - div를 가지고 table 처럼 사용할 수 있는 것 
+  .col-container{ display: inline-table; width:100%;}
+  .col { display: table-cell; padding:20px;}
+
+
+ >> 예지 starbuzz: 가변레이어 width에 calc를 주는것 모르게뜸!
+
+
+ >> float는 직접 적용 되어야 하는 태그에 건다! (예지 07-02)
+
+
+ >> 예제 07-03 이상해.. (div.box4에 오류가 나고있음)
+
+
+ >> 예제07-05 왜 pos2, pos3에서 색이 안들어가지?
+
+
+(점심시간)
+
+
+ >> 예제07-07
+display - 영역까지 없어지는 것
+visibility - 영역은 살아있지만 보이지는 않는것 (잘 사용하지 않음)
+
+
+ >> z index : 쌓이는 순서 변경
+ - z index 는 기재되어 있지 않으면 '0' 값을 가짐
+ - 기준 값보다 아래로 오브젝트를 보내려면 '-1' 사용 (기준값 0일 경우에 )
+
+
+ >> 예제 starbuzz-horisontal (과제로 해오기)
+
+
+#. 레이아웃 - 그리드 (레이아웃의 4가지 유형)
+
+
+ >>cs08-03. fixed_layout_B.html ← 요 문제 잘 못풀겠음!
+
+
+(수업중 딴짓) : 아이허브 다이어트 보조제
+https://blog.naver.com/chaisme/221351200225 
+
+
+ >> 레이아웃 C 부터 못하고 있음 (cs08-03)
+
+
+
+
+
+
+
+
+
+
+
+
+#. border 기능이 안먹는 유일 한 태그 = input 태그!
+
+
+#. border를 사용할때 3가지가 기본속성! (예제 cs02-09)
+ - border: 1px dotted #ff0000 (요렇게!)
+
+
+cf. 반은선택자 ':'은 알면 좋은것!
+
+
+ ※ 태그를 찾기 위한 방법 
+  1. id 속성 → # 
+  2. 클래스 속성 → . 
+    (태그명.클래스)
+  3. 일반속성 → []
+  4. 태그명 → 태그명
+  5. 자식찾기 >
+  6. 자손찾기 (공백)
+
+
+#. 내 컴퓨터에 깔려있지 않은 폰트를 어떻게 불러서 사용할수 있을까?
+
+#. css- import / font-face: woff 파일 (실제로 폰트가 다운로드가 되는 것임)
+
+#. font-family 로 1,2,3순위 적용 폰트로 여러개를 기술 할 수있음!
+
+
+(점심시간)
+
+
+#. CSS 3대 원칙
+ 1. 위에서 아래
+ 2. 시계방향
+ 3. 바깥쪽에서 안쪽으로
+
+
+#. 태그는 박스다
+ - padding
+ - bording
+ - margin
+ - width / height
+
+
+#. 보더를 줄때는 width, color, style 을 한번에 묶어서 선언해줄것
+
+
+#. 둥은 테두리 : border radius (버튼효과)
+
+
+#. 한줄에 나오게 하려면 2가지 방법!
+ - display 사용 or float를 사용!
+ - display를 사용하면 텍스트처럼 처리되어 자동으로 6px씩 붙는다!
+
+
+#. 예제 cs04-12 
+ - float left를 사용하는 경우 반드시 clear both를 사용해야함!
+ - 
+ - 마지막 div 찾기: 반응상태자 last child!
+
+
+~ borer radius 까지!

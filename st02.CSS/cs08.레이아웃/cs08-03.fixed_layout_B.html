@@ -4,6 +4,39 @@
     <meta charset="UTF-8">
     <title>레이아웃 B</title>
 </head>
+<style>
+
+    div {
+        height:30px;
+        text-align: center;
+    }
+
+    #sidebar{
+        background-color: lightslategray;
+        height: 300%;
+        width: 50%;
+        float: left;
+    }
+
+    #header{
+        background-color: lightblue;
+    }
+
+    #content{
+        background-color: lightcoral;
+    }
+
+    #footer{
+        background-color: lightseagreen;
+    }
+
+    #right{
+        float:right;
+        width: 50%;
+    }
+</style>
+
+
 
 <body>
     <h1>레이아웃 B</h1>
@@ -13,18 +46,21 @@
             sidebar
         </div>
 
-        <div id="header">
-            header
-        </div>
+        <div id="right">
 
-        <div id="content">
-            content
-        </div>
+            <div id="header">
+                header
+            </div>
 
-        <div id="footer">
-            footer
+            <div id="content">
+                content
+            </div>
+
+            <div id="footer">
+                footer
+            </div>
         </div>
     </div>
 </body>
 
-</html>
+</html>
